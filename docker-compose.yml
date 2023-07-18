@@ -1,0 +1,24 @@
+version: "3"
+services:
+  springboot-app:
+    image: springboot-app
+    restart: always
+    build: .
+    ports:
+      - 8081:8081
+#    environment:
+#      MYSQL_HOST: mysqldb
+#      MYSQL_USER: root
+#      MYSQL_PASSWORD: root
+#      MYSQL_DB: microservices
+
+
+#  mysqldb:
+#    image: mysql:8
+#    ports:
+#      - 3307:3306
+#    volumes:
+#      - ./db:/var/lib/mysql
+#    environment:
+#      MYSQL_DATABASE: microservices
+#      MYSQL_ROOT_PASSWORD: root
