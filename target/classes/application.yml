@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://manish:manish@merndb.nztglbw.mongodb.net/employee?retryWrites=true&w=majority
+      database: employee
+
+
+
+
+
