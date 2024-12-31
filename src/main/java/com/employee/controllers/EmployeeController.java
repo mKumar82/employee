@@ -38,6 +38,7 @@ public class EmployeeController {
     }
 
     @GetMapping
+    @CrossOrigin(origins = "http://localhost:3000")
     public Page<Employee> getAllEmployees(
             @RequestParam(defaultValue = "0") @PositiveOrZero int page,
             @RequestParam(defaultValue = "4") @Valid @Min(1) int size,
